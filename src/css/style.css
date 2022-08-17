@@ -33,6 +33,13 @@ body{
 .wizard{
     position: absolute;
     background-image: url('/src/images/wizard.png');
+    background-size: cover;
+}
+
+.bug{
+    position: absolute;
+    background-image: url("/src/images/bug.png");
+    background-size: cover;
 }
 
 .hidden{
