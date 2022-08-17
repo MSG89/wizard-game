@@ -13,8 +13,8 @@ function initGameObjects(){
             wizardElement.style.height = initialState.height + 'px';
             wizardElement.style.width = initialState.width + 'px';
 
-            wizardElement.style.left = initialState.startx + 'px';
-            wizardElement.style.top = initialState.starty + 'px';
+            wizardElement.style.left = initialState.posX + 'px';
+            wizardElement.style.top = initialState.posY + 'px';
 
             this.wizardElement = wizardElement;
 
