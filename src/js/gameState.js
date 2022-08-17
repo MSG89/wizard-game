@@ -1,6 +1,12 @@
 function initState(){
     const state = {
-        player: 'Pesho'
+        player: 'Pesho',
+        wizard: {
+            width: 82,
+            height:100,
+            startx: Math.floor(Math.random()*400),
+            starty: Math.floor(Math.random()*200),
+        }
     }
 
     return state;
