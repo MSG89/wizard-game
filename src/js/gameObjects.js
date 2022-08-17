@@ -29,7 +29,7 @@ function initGameObjects(){
             bugElement.style.height = stats.height + 'px';
 
             bugElement.style.left = gameScreen.offsetWidth - stats.width + 'px';
-            bugElement.style.top = Math.floor(Math.random()*gameScreen.offsetHeight - stats.height) + 'px';
+            bugElement.style.top = Math.floor(Math.random()*(gameScreen.offsetHeight - stats.height)) + 'px';
 
             gameScreen.appendChild(bugElement);
         }
