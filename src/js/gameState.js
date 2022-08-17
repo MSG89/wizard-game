@@ -6,7 +6,8 @@ function initState(){
             height:100,
             startx: Math.floor(Math.random()*400),
             starty: Math.floor(Math.random()*200),
-        }
+        },
+        keys: {}
     }
 
     return state;

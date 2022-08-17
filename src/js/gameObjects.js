@@ -19,7 +19,7 @@ function initGameObjects(){
             this.wizardElement = wizardElement;
 
             gameScreen.appendChild(wizardElement);
-            return wizard;
+            return wizardElement;
         }
     };
 }
