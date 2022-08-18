@@ -50,6 +50,12 @@ body{
     background-size: cover;
 }
 
+.score{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
 .hidden{
     display: none;
 }
