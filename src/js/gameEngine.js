@@ -26,15 +26,7 @@ function gameLoop(state, game, timestamp){
         game.createBug(state.bugStats);
         state.bugStats.nextSpawnTimestamp = timestamp + Math.random()*state.bugStats.maxSpawnInterval;
     }
-    
 
-
-
-
-    //Render wizard
-    wizardElement.style.left = wizard.posX + 'px';
-    wizardElement.style.top = wizard.posY + 'px';
-    
     //Render bugs
     document.querySelectorAll('.bug').forEach(bug=>{
         let posX = parseInt(bug.style.left);
@@ -44,9 +36,25 @@ function gameLoop(state, game, timestamp){
         }else{
             bug.remove();
         }
-        
+    });    
+
+    //render fireball
+    document.querySelectorAll('.fireball').forEach(fireball => {
+        let posX = parseInt(fireball.style.left);
+
+        if(posX > game.gameScreen.offsetWidth){
+            fireball.remove();
+        }else{
+            fireball.style.left = posX + state.fireball.speed + 'px';    
+
+        }
+
     })
     
+
+    //Render wizard
+    wizardElement.style.left = wizard.posX + 'px';
+    wizardElement.style.top = wizard.posY + 'px';
     
     window.requestAnimationFrame(gameLoop.bind(null, state, game));
 }
